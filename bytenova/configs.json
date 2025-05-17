@@ -1,0 +1,10 @@
+{
+  "skipInvalidProxy": false,
+  "delayEachAccount": [1, 1],
+  "timeToRestartAllAccounts": 300,
+  "howManyAccountsRunInOneTime": 200,
+  "changeAvatar": true,
+  "updateName": true,
+  "doTasks": true,
+  "referralCodes": ["Gq6CG0r1f", "Zarei5v6q", "tCeYrh8sC", "tCeYrh8sC"]
+}
