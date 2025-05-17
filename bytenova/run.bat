@@ -8,14 +8,13 @@ echo Checking configuration files...
 
 if not exist configs.json (
     echo {> configs.json
-    echo   "rotateProxy": false,>> configs.json
     echo   "skipInvalidProxy": false,>> configs.json
-    echo   "proxyRotationInterval": 2,>> configs.json
     echo   "delayEachAccount": [5, 8],>> configs.json
     echo   "timeToRestartAllAccounts": 300,>> configs.json
     echo   "howManyAccountsRunInOneTime": 100,>> configs.json
     echo   "doTasks": true,>> configs.json
-    echo   "playGames": true,>> configs.json
+    echo   "changeAvatar": true,>> configs.json
+    echo   "updateName": true,>> configs.json
     echo   "referralCode": ["Gq6CG0r1f", "Zarei5v6q", "tCeYrh8sC", "tCeYrh8sC"]>> configs.json
     echo }>> configs.json
     echo Created configs.json

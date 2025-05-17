@@ -7,7 +7,7 @@ NC='\033[0m'
 
 chmod +x "$0"
 
-echo -ne "\033]0;ByteNOVA Bot by @MeoMunDep\007"
+echo -ne "\033]0;Bytenova Bot by @MeoMunDep\007"
 
 check_node() {
     if ! command -v node &> /dev/null; then
@@ -67,12 +67,13 @@ fi
 create_default_configs() {
     cat > configs.json << EOL
 {
-  "skipInvalidProxy": true,
+  "skipInvalidProxy": false,
   "delayEachAccount": [1, 1],
   "timeToRestartAllAccounts": 300,
   "howManyAccountsRunInOneTime": 200,
+  "changeAvatar": true,
+  "updateName": true,
   "doTasks": true,
-  "doReferrals": true,
   "referralCodes": ["Gq6CG0r1f", "Zarei5v6q", "tCeYrh8sC", "tCeYrh8sC"]
 }
 EOL
@@ -110,4 +111,4 @@ cd - > /dev/null
 print_green "Dependencies installation completed!"
 
 print_green "Starting the bot..."
-node meomundep
+node meomundep.js
